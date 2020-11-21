@@ -1,0 +1,45 @@
+.wrapper {
+  width: 400px;
+  margin: auto;
+}
+
+.contact__input {
+  padding: 0 0.7em;
+  width: 100%;
+  border-radius: 5px;
+  height: 3em;
+  border: 1px solid #666;
+}
+.contact__input--large {
+  height: 10em;
+  padding: 0.7em;
+}
+.contact textarea:focus::placeholder {
+  color: transparent;
+}
+.contact__submit {
+  margin-top: 10px;
+  float: right;
+  clear: both;
+}
+
+textarea {
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  border: transparent;
+  color: #000;
+  padding: 0.7em 1.3em;
+  background-color: #dcdcdc;
+  transition: background-color 200ms ease-in-out;
+}
+.btn:hover {
+  background-color: #bdbdbd;
+}
+
+/*# sourceMappingURL=style.css.map */

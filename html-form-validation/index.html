@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+    This is an example of html built in form validation
+    email pattern,
+    min length,
+    disappearing placeholder when a user clicks the textarea
+-->
+<div class="wrapper">
+    <form class="row__cell contact">
+        <label for="name">Name</label>
+        <input class="contact__input" type="text" id="name" name="name" required minlength="3">
+
+        <label for="email">Email</label>
+        <input class="contact__input" type="email" id="email" name="email" required minlength="3" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+        <label for="subject">Subject</label>
+        <input class="contact__input" type="text" id="subject" name="subject" required minlength="3">
+
+        <label for="message">Message</label>
+        <textarea class="contact__input contact__input--large" id="message" name="message" placeholder="Write a message..." required minlength="5"></textarea>
+
+        <input class="btn contact__submit" type="submit" value="Send">
+    </form>
+</div>
+</body>
+</html>
